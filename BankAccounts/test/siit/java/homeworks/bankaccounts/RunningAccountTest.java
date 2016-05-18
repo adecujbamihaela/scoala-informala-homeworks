@@ -13,6 +13,7 @@ import org.junit.Test;
 
 public class RunningAccountTest {
 
+	// TODO CODE REVIEW: This test is not working
 	@Test
 	public void whenMultipleOperationsCalled_balanceIsCorrect() throws InsufficientFundsException {
 		// given
@@ -30,6 +31,7 @@ public class RunningAccountTest {
 
 		// then
 		float withdrawalsAndAdds = credit - 50 - 100 + 80;
+		// TODO CODE REVIEW: you are not using this variable. Not a good practice. Wither use it, or delete it.
 		float expectedBalanceAfterOperations = credit - withdrawalsAndAdds;
 
 		assertEquals("4 months worth of withdrawals and adds have been deducted.", 730,
