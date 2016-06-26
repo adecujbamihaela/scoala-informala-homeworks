@@ -31,4 +31,10 @@ public class Vote {
 		return candidate;
 	}
 
+	@Override
+	public String toString() {
+		return "[name=" + name + ", CNP=" + CNP + ", candidate=" + candidate + "]";
+	}
+	
+
 }

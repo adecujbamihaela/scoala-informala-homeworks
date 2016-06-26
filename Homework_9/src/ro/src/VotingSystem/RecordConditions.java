@@ -9,8 +9,8 @@ package ro.src.VotingSystem;
 import java.util.List;
 
 public interface RecordConditions {
-	void save(Vote vote) throws Exception;
+	void elect(Vote vote) throws Exception;
 
-	List<Vote> loadAll() throws Exception;
+	List<Vote> readAll() throws Exception;
 }
 

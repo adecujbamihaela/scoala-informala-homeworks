@@ -24,7 +24,7 @@ public class OptimisedVotingFile extends VotingFile implements AutoCloseable {
 	}
 
 	@Override
-	public void save(Vote vote) throws IOException {
+	public void elect(Vote vote) throws IOException {
 		writer.append(voteFormater.toVoteFile(vote) + "\n");
 	}
 
